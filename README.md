@@ -1,3 +1,5 @@
+![LangGraph Studio](./cover.svg)
+
 # LangGraph Studio
 
 ## Overview
