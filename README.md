@@ -26,8 +26,8 @@ When you open LangGraph Studio desktop app for the first time, you need to login
 
 Once you have successfully authenticated, you can choose the LangGraph application folder to use — you can either drag and drop or manually select it in the file picker. If you are using the example project, the folder would be `langgraph-example`.
 
-!!! note Note
-    The application directory you select needs to contain correctly configured `langgraph.json` file. See more information on how to configure it [here](https://langchain-ai.github.io/langgraph/cloud/reference/cli/#configuration-file) and how to set up a LangGraph app [here](https://langchain-ai.github.io/langgraph/cloud/deployment/setup/).
+> [!IMPORTANT] 
+> The application directory you select needs to contain correctly configured `langgraph.json` file. See more information on how to configure it [here](https://langchain-ai.github.io/langgraph/cloud/reference/cli/#configuration-file) and how to set up a LangGraph app [here](https://langchain-ai.github.io/langgraph/cloud/deployment/setup/).
 
 ![Select Project Screen](./img/select_project_screen.png)
 
@@ -58,8 +58,8 @@ The following video shows how to start a new run:
 
 To change configuration for a given graph run, press `Configurable` button in the `Input` section. Then click `Submit` to invoke the graph.
 
-!!! note Note
-    In order for the `Configurable` menu to be visible, make sure to specify `config_schema` when creating `StateGraph`. You can read more about how to add config schema to your graph [here](https://langchain-ai.github.io/langgraph/cloud/how-tos/cloud_examples/configuration_cloud/).
+> [!IMPORTANT] 
+> In order for the `Configurable` menu to be visible, make sure to specify `config_schema` when creating `StateGraph`. You can read more about how to add config schema to your graph [here](https://langchain-ai.github.io/langgraph/cloud/how-tos/cloud_examples/configuration_cloud/).
    
 The following video shows how to edit configuration and start a new run:
 
