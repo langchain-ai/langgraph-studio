@@ -50,9 +50,7 @@ To start a new run:
 
 The following video shows how to start a new run:
 
-<video controls allowfullscreen="true" poster="./img/graph_video_poster.png">
-    <source src="./img/graph_invoke.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/e0e7487e-17e2-4194-a4ad-85b346c2f1c4
 
 ### Configure graph run
 
@@ -63,9 +61,10 @@ To change configuration for a given graph run, press `Configurable` button in th
    
 The following video shows how to edit configuration and start a new run:
 
-<video controls allowfullscreen="true" poster="./img/graph_video_poster.png">
-    <source src="./img/graph_config.mp4" type="video/mp4">
-</video>
+
+
+https://github.com/user-attachments/assets/8495b476-7e33-42d4-85cb-2f9269bea20c
+
 
 ## Create and edit threads
 
@@ -78,9 +77,7 @@ When you open LangGraph Studio, you will automatically be in a new thread window
 
 The following video shows how to create a thread:
 
-<video controls="true" allowfullscreen="true" poster="./img/graph_video_poster.png">
-    <source src="./img/create_thread.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/78d4a692-2042-48e2-a7e2-5a7ca3d5a611
 
 ### Select a thread
 
@@ -91,9 +88,7 @@ To select a thread:
 
 The following video shows how to select a thread:
 
-<video controls="true" allowfullscreen="true" poster="./img/graph_video_poster.png">
-    <source src="./img/select_thread.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/5f0dbd63-fa59-4496-8d8e-4fb8d0eab893
 
 ### Edit thread state
 
@@ -106,9 +101,7 @@ LangGraph Studio allows you to edit the thread state and fork the threads to cre
 
 The following video shows how to edit a thread in the studio:
 
-<video controls allowfullscreen="true" poster="./img/graph_video_poster.png">
-    <source src="./img/fork_thread.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/47f887e7-2e3f-46ce-977c-f474c3cd797e
 
 ## How to add interrupts to your graph
 
@@ -123,9 +116,7 @@ To walk through the agent execution step by step, you can add interrupts to a al
 
 The following video shows how to add interrupts to all nodes:
 
-<video controls allowfullscreen="true" poster="./img/graph_video_poster.png">
-    <source src="./img/graph_interrupts_all.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/db44ebda-4d6e-482d-9ac8-ea8f5f0148ea
 
 ### Add interrupt to a specific node
 
@@ -136,9 +127,7 @@ The following video shows how to add interrupts to all nodes:
 
 The following video shows how to add interrupts to a specific node:
 
-<video controls allowfullscreen="true" poster="./img/graph_video_poster.png">
-    <source src="./img/graph_interrupts.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/13429609-18fc-4f21-9cb9-4e0daeea62c4
 
 To remove the interrupt, simply follow the same step and press `x` button on the left side of the node.
 
@@ -154,9 +143,7 @@ To modify the config from the studio, follow these steps:
 
 The following video shows how to edit project config from the studio:
 
-<video controls allowfullscreen="true" poster="./img/graph_video_poster.png">
-    <source src="./img/graph_edit_json.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/86d7d1f7-800c-4739-80bc-8122b4728817
 
 ## Edit graph code
 
@@ -170,6 +157,4 @@ To modify your graph from the studio, follow these steps:
 
 The following video shows how to open code editor from the studio:
 
-<video controls allowfullscreen="true" poster="./img/graph_video_poster.png">
-    <source src="./img/graph_edit_code.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/8ac0443d-460b-438e-a379-182ec9f68ff5
