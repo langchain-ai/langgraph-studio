@@ -4,7 +4,7 @@
 
 ## Overview
 
-LangGraph Studio is a desktop app for prototyping and debugging LangGraph Cloud applications locally. LangGraph Studio allows you to run API server for your LangGraph app and interact with it via a UI, all in one place. Agent trajectories are visually laid out, making it easier to understand agent workflows and to debug failure modes. LangGraph Studio leverages full power of LangGraph and LangGraph Cloud features, including adding breakpoints for easy interruption, state editing, resumption, and time travel.
+LangGraph Studio is a desktop app for prototyping and debugging LangGraph applications locally. LangGraph Studio runs an API server for your LangGraph app and lets you interact with it via a UI, all in one place. Agent trajectories are visually laid out, making it easier to understand agent workflows and to debug failure modes. LangGraph Studio leverages the full power of LangGraph and LangGraph Cloud features, including adding breakpoints for easy interruption, state editing, resumption, and time travel.
 
 ## Setup
 
