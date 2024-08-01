@@ -4,17 +4,25 @@
 
 ## Overview
 
-LangGraph Studio is a desktop app for prototyping and debugging LangGraph applications locally. LangGraph Studio runs an API server for your LangGraph app and lets you interact with it via a UI, all in one place. Agent trajectories are visually laid out, making it easier to understand agent workflows and to debug failure modes. LangGraph Studio leverages the full power of LangGraph and LangGraph Cloud features, including adding breakpoints for easy interruption, state editing, resumption, and time travel.
+LangGraph Studio is a desktop app for prototyping and debugging LangGraph applications locally. LangGraph visualizes your agent graph, lets you interact with the agent, and lets you modify the agent state directly. It speeds up development by giving developers more insight into what the agent looks like, the steps it is taking, and allowing you to modify the agent halfway through and then testing out those changes.
 
 ## Setup
 
 To use LangGraph Studio, make sure you have a [project with a LangGraph app](https://langchain-ai.github.io/langgraph/cloud/deployment/setup/) set up.
 
-You can get started with an existing example project [here](https://github.com/langchain-ai/langgraph-example):
+For this example, we will use this example repository [here](https://github.com/langchain-ai/langgraph-example):
 
 ```shell
 git clone https://github.com/langchain-ai/langgraph-example.git
 ```
+
+You will then want to create a `.env` file with the relevant environment variables:
+
+```shell
+cp .env.example .env
+```
+
+You should then open up the `.env` file and fill in with relevant OpenAI, Anthropic, and [Tavily](https://app.tavily.com/sign-in) API keys.
 
 Once you've set up the project, you can use it in LangGraph Studio. Let's dive in!
 
@@ -73,7 +81,6 @@ https://github.com/user-attachments/assets/8495b476-7e33-42d4-85cb-2f9269bea20c
 When you open LangGraph Studio, you will automatically be in a new thread window. If you have an existing thread open, follow these steps to create a new thread:
 
 1. In the top-right corner of the right-hand pane, press `+` to open a new thread menu.
-1. Choose between `Empty thread` or `Clone thread`. If you choose `Clone thread`, the state from the currently selected (existing) thread will be copied into a new thread. The original and copied thread are completely independent.
 
 The following video shows how to create a thread:
 
