@@ -166,3 +166,9 @@ To modify your graph from the studio, follow these steps:
 The following video shows how to open code editor from the studio:
 
 https://github.com/user-attachments/assets/8ac0443d-460b-438e-a379-182ec9f68ff5
+
+After you modify the underlying code you can also replay a node in the graph. For example, if an agent responds poorly, you can update the agent node implementation in your code editor and rerun it. This can make it much easier to iterate on long-running agents.
+
+<video controls allowfullscreen="true" poster="./img/graph_video_poster.png">
+    <source src="./img/replay.mp4" type="video/mp4">
+</video>
