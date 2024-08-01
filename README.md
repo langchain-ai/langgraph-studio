@@ -2,7 +2,7 @@
 
 # LangGraph Studio
 
-LangGraph Studio is a desktop app for prototyping and debugging LangGraph applications locally. LangGraph visualizes your agent graph, lets you interact with the agent, and lets you modify the agent state directly. It speeds up development by giving developers more insight into what the agent looks like, the steps it is taking, and allowing you to modify the agent halfway through and then test out those changes.
+LangGraph Studio offers a new way to develop LLM applications by providing a specialized agent IDE that enables visualization, interaction, and debugging of complex agentic applications
 
 ![](./img/intro.gif)
 
