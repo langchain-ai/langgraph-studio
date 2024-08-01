@@ -6,6 +6,10 @@ LangGraph Studio offers a new way to develop LLM applications by providing a spe
 
 ![](./img/intro.gif)
 
+## Download
+
+Currently only Apple Silicon Macs are supported. Download the latest `.dmg` file of LangGraph Studio by clicking [here](https://langgraph-studio.vercel.app/api/mac/arm64/latest) or by visiting the [releases page](https://github.com/langchain-ai/langgraph-studio/releases).
+
 ## Setup
 
 To use LangGraph Studio, make sure you have a [project with a LangGraph app](https://langchain-ai.github.io/langgraph/cloud/deployment/setup/) set up.
@@ -34,7 +38,7 @@ When you open LangGraph Studio desktop app for the first time, you need to login
 
 Once you have successfully authenticated, you can choose the LangGraph application folder to use — you can either drag and drop or manually select it in the file picker. If you are using the example project, the folder would be `langgraph-example`.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > The application directory you select needs to contain correctly configured `langgraph.json` file. See more information on how to configure it [here](https://langchain-ai.github.io/langgraph/cloud/reference/cli/#configuration-file) and how to set up a LangGraph app [here](https://langchain-ai.github.io/langgraph/cloud/deployment/setup/).
 
 ![Select Project Screen](./img/select_project_screen.png)
@@ -64,15 +68,12 @@ https://github.com/user-attachments/assets/e0e7487e-17e2-4194-a4ad-85b346c2f1c4
 
 To change configuration for a given graph run, press `Configurable` button in the `Input` section. Then click `Submit` to invoke the graph.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > In order for the `Configurable` menu to be visible, make sure to specify `config_schema` when creating `StateGraph`. You can read more about how to add config schema to your graph [here](https://langchain-ai.github.io/langgraph/cloud/how-tos/cloud_examples/configuration_cloud/).
-   
+
 The following video shows how to edit configuration and start a new run:
 
-
-
 https://github.com/user-attachments/assets/8495b476-7e33-42d4-85cb-2f9269bea20c
-
 
 ## Create and edit threads
 
