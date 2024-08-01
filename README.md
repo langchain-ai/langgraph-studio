@@ -6,7 +6,7 @@ LangGraph Studio offers a new way to develop LLM applications by providing a spe
 
 With visual graphs and the ability to edit state, you can better understand agent workflows and iterate faster. LangGraph Studio integrates with [LangSmith](https://smith.langchain.com/) so you can collaborate with teammates to debug failure modes.
 
-LangGraph Studio is available for free to all [LangSmith](https://smith.langchain.com/) users on any plan tier while in Beta.
+While in Beta, LangGraph Studio is available for free to all LangSmith users on any plan tier. [Sign up for LangSmith here](http://smith.langchain.com/).
 
 ![](./img/intro.gif)
 
