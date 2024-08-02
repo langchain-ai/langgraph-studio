@@ -193,7 +193,7 @@ graph = workflow.compile(interrupt_before=["human"])
 
 The following video shows how to manually send state updates (i.e. messages in our example) when interrupted:
 
-
+https://github.com/user-attachments/assets/f6d4fd18-df4d-45b7-8b1b-ad8506d08abd
 
 ## Edit project config
 
