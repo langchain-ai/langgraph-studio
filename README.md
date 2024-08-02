@@ -34,7 +34,15 @@ cp .env.example .env
 
 You should then open up the `.env` file and fill in with relevant OpenAI, Anthropic, and [Tavily](https://app.tavily.com/sign-in) API keys.
 
-**Note: do NOT add a LANGSMITH_API_KEY to the .env file.** We will do this automatically for you when you authenticate, and if you do this manually this may cause errors.
+If you already have them set in your environment, you can save them to this .env file with the following commands:
+
+```shell
+echo "OPENAI_API_KEY=\"$OPENAI_API_KEY\"" > .env
+echo "ANTHROPIC_API_KEY=\"$ANTHROPIC_API_KEY\"" >> .env
+echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> .env
+```
+
+**Note: do NOT add a LANGSMITH_API_KEY to the .env file.** We will do this automatically for you when you authenticate, and manually setting this may cause errors.
 
 Once you've set up the project, you can use it in LangGraph Studio. Let's dive in!
 
