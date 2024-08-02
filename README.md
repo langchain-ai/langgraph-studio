@@ -16,7 +16,7 @@ Currently only Apple Silicon Macs are supported. Download the latest `.dmg` file
 
 ## Setup
 
-LangGraph Studio requires Docker Desktop version 4.24 or higher. Please make sure you have Docker installed and running before continuing.
+LangGraph Studio requires docker-compose version 2.22.0+ or higher. Please make sure you have Docker installed and running before continuing.
 
 To use LangGraph Studio, make sure you have a [project with a LangGraph app](https://langchain-ai.github.io/langgraph/cloud/deployment/setup/) set up.
 
