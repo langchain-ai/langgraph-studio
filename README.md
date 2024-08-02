@@ -141,7 +141,7 @@ To remove the interrupt, simply follow the same step and press `x` button on the
 
 ## Human-in-the-loop
 
-In addition to interrupting on a node and editing the graph state, you might want to support human-in-the-loop workflows with the ability to manually update state. Here is a modified version of `agent.py` with `agent` and `human` nodes, where the graph execution will be interrupted on `human` node.
+In addition to interrupting on a node and editing the graph state, you might want to support human-in-the-loop workflows with the ability to manually update state. Here is a modified version of `agent.py` with `agent` and `human` nodes, where the graph execution will be interrupted on `human` node. This will let you send input as part of the `human` node. This can be useful when you want the agent to get user input. This essentially replaces how you might use `input()` if you were running this from the command line.
 
 ```python
 from typing import TypedDict, Annotated, Sequence, Literal
