@@ -20,11 +20,18 @@ LangGraph Studio requires docker-compose version 2.22.0+ or higher. Please make 
 
 To use LangGraph Studio, make sure you have a [project with a LangGraph app](https://langchain-ai.github.io/langgraph/cloud/deployment/setup/) set up.
 
-For this example, we will use this example repository [here](https://github.com/langchain-ai/langgraph-example):
+For this example, we will use this example repository [here](https://github.com/langchain-ai/langgraph-example) which uses a `requirements.txt` file for dependencies:
 
 ```shell
 git clone https://github.com/langchain-ai/langgraph-example.git
 ```
+
+If you would like to use a `pyproject.toml` file instead for managing dependencies, you can use [this](https://github.com/langchain-ai/langgraph-example-pyproject) example repository.
+
+```shell
+git clone https://github.com/langchain-ai/langgraph-example-pyproject.git
+```
+
 
 You will then want to create a `.env` file with the relevant environment variables:
 
