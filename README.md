@@ -12,7 +12,7 @@ While in Beta, LangGraph Studio is available for free to all LangSmith users on 
 
 ## Download
 
-Currently only Apple Silicon Macs are supported. Download the latest `.dmg` file of LangGraph Studio by clicking [here](https://langgraph-studio.vercel.app/api/mac/arm64/latest) or by visiting the [releases page](https://github.com/langchain-ai/langgraph-studio/releases).
+Currently only macOS is supported. Download the latest `.dmg` file of LangGraph Studio by clicking [here](https://langgraph-studio.vercel.app/api/mac/latest) or by visiting the [releases page](https://github.com/langchain-ai/langgraph-studio/releases).
 
 ## Setup
 
