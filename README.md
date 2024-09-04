@@ -12,11 +12,16 @@ While in Beta, LangGraph Studio is available for free to all LangSmith users on 
 
 ## Download
 
-Currently only macOS is supported. Download the latest `.dmg` file of LangGraph Studio by clicking [here](https://langgraph-studio.vercel.app/api/mac/latest) or by visiting the [releases page](https://github.com/langchain-ai/langgraph-studio/releases).
+Download the latest `.dmg` file of LangGraph Studio by clicking [here](https://langgraph-studio.vercel.app/api/mac/latest) or by visiting the [releases page](https://github.com/langchain-ai/langgraph-studio/releases).
+
+Currently, only macOS is supported. Windows and Linux support is coming soon. We also depend on Docker Engine to be running, currently we only support the following runtimes:
+
+- [Docker Desktop](https://docs.docker.com/engine/install/)
+- [Orbstack](https://orbstack.dev/)
 
 ## Setup
 
-LangGraph Studio requires docker-compose version 2.22.0+ or higher. Please make sure you have [Docker](https://docs.docker.com/engine/install/) installed and running before continuing.
+LangGraph Studio requires docker-compose version 2.22.0+ or higher. Please make sure you have [Docker Desktop](https://docs.docker.com/engine/install/) or [Orbstack](https://orbstack.dev/) installed and running before continuing.
 
 To use LangGraph Studio, make sure you have a [project with a LangGraph app](https://langchain-ai.github.io/langgraph/cloud/deployment/setup/) set up.
 
