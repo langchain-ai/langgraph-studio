@@ -97,7 +97,7 @@ https://github.com/user-attachments/assets/e0e7487e-17e2-4194-a4ad-85b346c2f1c4
 To change configuration for a given graph run, press `Configurable` button in the `Input` section. Then click `Submit` to invoke the graph.
 
 > [!IMPORTANT]
-> In order for the `Configurable` menu to be visible, make sure to specify `config_schema` when creating `StateGraph`. You can read more about how to add config schema to your graph [here](https://langchain-ai.github.io/langgraph/cloud/how-tos/cloud_examples/configuration_cloud/).
+> In order for the `Configurable` menu to be visible, make sure to specify config schema when creating `StateGraph`. You can read more about how to add config schema to your graph [here](https://langchain-ai.github.io/langgraph/how-tos/configuration/#configure-the-graph).
 
 The following video shows how to edit configuration and start a new run:
 
