@@ -37,7 +37,6 @@ If you would like to use a `pyproject.toml` file instead for managing dependenci
 git clone https://github.com/langchain-ai/langgraph-example-pyproject.git
 ```
 
-
 You will then want to create a `.env` file with the relevant environment variables:
 
 ```shell
@@ -255,3 +254,22 @@ After you modify the underlying code you can also replay a node in the graph. Fo
 
 https://github.com/user-attachments/assets/9ec1b8ed-c6f8-433d-8bef-0dbda58a1075
 
+## Troubleshooting
+
+### How do I access local services and models such as Ollama, Chroma, etc?
+
+LangGraph Studio relies on Docker Compose to run the API, Redis and Postgres, which in turn creates its own network. Thus, to access local services you need to use `host.docker.internal` as the hostname instead of `localhost`. See [#112](https://github.com/langchain-ai/langgraph-studio/issues/112) for more details.
+
+### Failing to install native dependencies during build
+
+By default, we try to make the image as small as possible, thus some dependencies such as `gcc` or `build-essentials` are missing from the base image. If you need to install additional dependencies, you can do so by adding additional Dockerfile instructions in the `dockerfile_lines` section of your `langgraph.json` file:
+
+```
+{
+    "dockerfile_lines": [
+        "RUN apt-get update && apt-get install -y gcc"
+    ]
+}
+```
+
+See [How to customize Dockerfile](https://langchain-ai.github.io/langgraph/cloud/deployment/custom_docker) for more details.
