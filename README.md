@@ -14,7 +14,7 @@ While in Beta, LangGraph Studio is available for free to all LangSmith users on 
 
 Download the latest `.dmg` file of LangGraph Studio by clicking [here](https://langgraph-studio.vercel.app/api/mac/latest) or by visiting the [releases page](https://github.com/langchain-ai/langgraph-studio/releases).
 
-The desktop application only supports macOS. Other users can [run a local LangGraph server and use the web studio](https://langchain-ai.github.io/langgraph/tutorials/langgraph-platform/local-server/). We also depend on Docker Engine to be running, currently we only support the following runtimes:
+The desktop application only supports macOS. Other users can [run a local LangGraph server and use the web studio](https://langchain-ai.github.io/langgraph/tutorials/langgraph-platform/local-server/#langgraph-studio-web-ui). We also depend on Docker Engine to be running, currently we only support the following runtimes:
 
 - [Docker Desktop](https://docs.docker.com/engine/install/)
 - [Orbstack](https://orbstack.dev/)
