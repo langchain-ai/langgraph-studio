@@ -9,7 +9,7 @@ With visual graphs and the ability to edit state, you can better understand agen
 While in Beta, LangGraph Studio is available for free to all LangSmith users on any plan tier. [Sign up for LangSmith here](http://smith.langchain.com/).
 
 > [!NOTE]
-> We recommend that users [run a local LangGraph server and use the web version of LangGraph studio](https://langchain-ai.github.io/langgraph/tutorials/langgraph-platform/local-server/) instead of using the LangGraph Studio Desktop application. This is a newer feature that improves the development experience as it works without Docker, significantly shortens start up times, supports code hot-reloading, and works across all platforms.
+> We recommend that users [run a local LangGraph server and use the web version of LangGraph Studio](https://langchain-ai.github.io/langgraph/tutorials/langgraph-platform/local-server/) instead of using the LangGraph Studio Desktop application. This is a newer feature that improves the development experience, as it works without Docker, significantly shortens startup times, supports code hot-reloading, and works across all platforms.
 
 ![](./img/intro.gif)
 
