@@ -1,6 +1,6 @@
 ![LangGraph Studio](./cover.svg)
 
-# LangGraph Studio (Beta)
+# LangGraph Studio Desktop (Beta)
 
 LangGraph Studio offers a new way to develop LLM applications by providing a specialized agent IDE that enables visualization, interaction, and debugging of complex agentic applications
 
@@ -9,7 +9,7 @@ With visual graphs and the ability to edit state, you can better understand agen
 While in Beta, LangGraph Studio is available for free to all LangSmith users on any plan tier. [Sign up for LangSmith here](http://smith.langchain.com/).
 
 > [!NOTE]
-> We recommend using web version of LangGraph Studio UI, which is supported on all platforms. To get started, [run a local LangGraph server](https://langchain-ai.github.io/langgraph/tutorials/langgraph-platform/local-server/#langgraph-studio-web-ui) and connect it to the web studio UI.
+> We recommend using web version of LangGraph Studio UI instead of the desktop app. Web studio UI is supported on all platforms, does not require Docker and is faster. To get started, [run a local LangGraph server](https://langchain-ai.github.io/langgraph/tutorials/langgraph-platform/local-server/#langgraph-studio-web-ui) and connect it to the web studio UI.
 
 ![](./img/intro.gif)
 
