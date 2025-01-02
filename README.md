@@ -174,51 +174,52 @@ To remove the interrupt, simply follow the same step and press `x` button on the
 In addition to interrupting on a node and editing the graph state, you might want to support human-in-the-loop workflows with the ability to manually update state. Here is a modified version of `agent.py` with `agent` and `human` nodes, where the graph execution will be interrupted on `human` node. This will let you send input as part of the `human` node. This can be useful when you want the agent to get user input. This essentially replaces how you might use `input()` if you were running this from the command line.
 
 ```python
-from typing import TypedDict, Annotated, Sequence, Literal
+from typing import Literal
 
-from langchain_core.messages import BaseMessage, HumanMessage
-from langchain_anthropic import ChatAnthropic
-from langgraph.graph import StateGraph, END, add_messages
-
-
-class AgentState(TypedDict):
-    messages: Annotated[Sequence[BaseMessage], add_messages]
+from langchain_openai import ChatOpenAI
+from langgraph.graph import MessagesState, StateGraph, END
+from langgraph.types import Command, interrupt
 
 
-model =  ChatAnthropic(temperature=0, model_name="claude-3-sonnet-20240229")
-def call_model(state: AgentState) -> AgentState:
+model = ChatOpenAI(temperature=0, model_name="gpt-4o")
+
+
+def call_model(state: MessagesState) -> Command[Literal["human", END]]:
     messages = state["messages"]
     response = model.invoke(messages)
-    return {"messages": [response]}
+
+    return Command(
+        goto="human",
+        update={"messages": [response]},
+    )
 
 
-# no-op node that should be interrupted on
-def human_feedback(state: AgentState) -> AgentState:
-    pass
+def human_feedback(state: MessagesState) -> Command[Literal["agent"]]:
+    """A node for collecting user input."""
+    print("Waiting for user input...")
+    user_input = interrupt(value="Ready for user input.")
+
+    print("user input:", user_input)
+
+    return Command(
+        goto="agent",
+        update={
+            "messages": [
+                {
+                    "role": "human",
+                    "content": user_input,
+                }
+            ]
+        },
+    )
 
 
-def should_continue(state: AgentState) -> Literal["agent", "end"]:
-    messages = state['messages']
-    last_message = messages[-1]
-    if isinstance(last_message, HumanMessage):
-        return "agent"
-    return "end"
-
-
-workflow = StateGraph(AgentState)
+workflow = StateGraph(MessagesState)
 workflow.set_entry_point("agent")
 workflow.add_node("agent", call_model)
 workflow.add_node("human", human_feedback)
-workflow.add_edge("agent", "human")
-workflow.add_conditional_edges(
-    "human",
-    should_continue,
-    {
-        "agent": "agent",
-        "end": END,
-    },
-)
-graph = workflow.compile(interrupt_before=["human"])
+
+graph = workflow.compile()
 ```
 
 The following video shows how to manually send state updates (i.e. messages in our example) when interrupted:
