@@ -1,6 +1,10 @@
 ![LangGraph Studio](./cover.svg)
 
-# LangGraph Studio Desktop (Beta)
+# LangGraph Studio
+
+Note: The MacOS studio desktop app is deprecated. Please use the command-line interface (`langgraph up` or `langgraph dev`) to create a compatible server and interact with the studio. The CLI is compatible with MacOS, Windows, and Linux and supports a superset of the functionality originally built into this desktop app.
+
+## LangGraph Studio Desktop App (deprecated)
 
 LangGraph Studio offers a new way to develop LLM applications by providing a specialized agent IDE that enables visualization, interaction, and debugging of complex agentic applications
 
