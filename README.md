@@ -1,6 +1,6 @@
 ![LangGraph Studio](./cover.svg)
 
-# LangGraph Studio Desktop (Beta)
+# LangGraph Studio Desktop (Deprecated)
 
 LangGraph Studio offers a new way to develop LLM applications by providing a specialized agent IDE that enables visualization, interaction, and debugging of complex agentic applications
 
