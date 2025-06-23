@@ -34,6 +34,7 @@ Chat mode is a simpler UI for iterating on and testing chat-specific agents. It 
 ## Learn more
 
 - See this guide on how to [get started](http://127.0.0.1:8000/langgraph/cloud/how-tos/studio/quick_start/) with LangGraph Studio.
+- See the full [LangGraph Platform docs](https://langchain-ai.github.io/langgraph/concepts/langgraph_platform/).
 
 ## Troubleshooting
 
@@ -45,6 +46,7 @@ Note: The MacOS Studio desktop app, which was previously the main way to run Stu
 
 LangGraph Studio relies on Docker Compose to run the API, Redis and Postgres, which in turn creates its own network. Thus, to access local services you need to use `host.docker.internal` as the hostname instead of `localhost`. See [#112](https://github.com/langchain-ai/langgraph-studio/issues/112) for more details.
 3
+
 ### Failing to install native dependencies during build
 
 By default, we try to make the image as small as possible, thus some dependencies such as `gcc` or `build-essentials` are missing from the base image. If you need to install additional dependencies, you can do so by adding additional Dockerfile instructions in the `dockerfile_lines` section of your `langgraph.json` file:
@@ -59,7 +61,7 @@ By default, we try to make the image as small as possible, thus some dependencie
 
 See [How to customize Dockerfile](https://langchain-ai.github.io/langgraph/cloud/deployment/custom_docker) for more details.
 
-###  Safari Connection Issues
+### Safari Connection Issues
 
 Safari blocks plain-HTTP traffic on localhost. When running Studio with `langgraph dev`, you may see "Failed to load assistants" errors.
 
@@ -91,7 +93,7 @@ Use this URL in Safari to load Studio. Here, the `baseUrl` parameter specifies y
 
 Chrome and other Chromium browsers allow HTTP on localhost. Use `langgraph dev` without additional configuration.
 
-###  Brave Connection Issues
+### Brave Connection Issues
 
 Brave blocks plain-HTTP traffic on localhost when Brave Shields are enabled. When running Studio with `langgraph dev`, you may see "Failed to load assistants" errors.
 
@@ -157,4 +159,3 @@ def routing_function(state: GraphState) -> Literal["node_b","node_c"]:
     else:
         return "node_c"
 ```
-
